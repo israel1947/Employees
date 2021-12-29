@@ -1,0 +1,21 @@
+
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">App Employees - Firebase</span>
+      <span class="navbar-brand mb-0 h1" *ngIf="user$ |async as user">{{user.email}}
+         <img  [src]="user.photoURL || '/assets/no-user-image.jpg'" alt="imagen del usuario">
+
+            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                   <mat-icon>expand_circle_down</mat-icon>
+             </button>
+             <mat-menu #menu="matMenu">
+                  <button mat-menu-item
+                          (click)="logout()">
+                          
+                    <mat-icon>logout</mat-icon>
+                    <span>Cerrar Sesión</span>
+                  </button>
+             </mat-menu>
+        </span> 
+     </div>
+</nav>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "empleados-5555e": {
+      "hosting": {
+        "employmend": [
+          "empleados-5555e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "empleados-5555e"
+  }
+}
